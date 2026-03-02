@@ -1,5 +1,9 @@
 # 2026-Month-on-Month-Dashboard-for-Field-Team-Power-BI-Project
 
+| Dashboard Preview |
+|------------------|
+| ![2026 Month-on-Month Dashboard](https://github.com/mutua001/2026-Month-on-Month-Dashboard-for-Field-Team-Power-BI-Project/raw/main/powerbsales.JPG) |
+
 * 📌 Overview
 
 - This project presents a Power BI dashboard designed for the field team to monitor key performance indicators (KPIs) on a monthly basis. The dashboard focuses on:
