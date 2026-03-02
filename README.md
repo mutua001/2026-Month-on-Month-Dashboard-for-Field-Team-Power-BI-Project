@@ -61,151 +61,144 @@ text
 -- Arrears Contribution = (Sum of Arrears in Month / Total Portfolio Arrears) * 100
 📈 Dashboard Design
 
-##The dashboard consists of the following pages:
+## The dashboard consists of the following pages:
 
-###Page 1: Executive Summary
+* Page 1: Executive Summary
 
-##KPI Cards
+* KPI Cards
+* Total Amount Paid: 39,000 KES
 
-##Total Amount Paid: 39,000 KES
+* Total kWh Used: 781.4 kWh
 
-##Total kWh Used: 781.4 kWh
+* Average Repayment Rate: 49.5% (from monthly averages)
 
-##Average Repayment Rate: 49.5% (from monthly averages)
+* Total Arrears: 31,000 KES
 
-##Total Arrears: 31,000 KES
+* Monthly Trends (Line/Bar Charts)
 
-###Monthly Trends (Line/Bar Charts)
+* Amount Paid by Month
 
-###Amount Paid by Month
+* Average Repayment Rate by Month
 
-###Average Repayment Rate by Month
+* Total kWh Used by Month
 
-###Total kWh Used by Month
+* Arrears by Month
 
-###Arrears by Month
+* Page 2: Cohort & Risk Analysis
 
-##Page 2: Cohort & Risk Analysis
+* Repayment Rate by Month
 
-###Repayment Rate by Month
+* Jan: 31.11%
 
-###Jan: 31.11%
+* Feb: 52.35%
 
-##Feb: 52.35%
+* Mar: 65.19%
 
-##Mar: 65.19%
+* Average Daily Usage by Month
 
-##Average Daily Usage by Month
+* Jan: 56.2 kWh
 
-###Jan: 56.2 kWh
+* Feb: 83.0 kWh
 
-###Feb: 83.0 kWh
+* Mar: 97.0 kWh
 
-##Mar: 97.0 kWh
+## Risk Segmentation Table
 
-##Risk Segmentation Table
+### Month	Repayment Rate	Avg Daily Usage	Risk Tier
+-- Jan	31.11%	56.2 kWh	High
+-- Feb	52.35%	83.0 kWh	Medium
+-- Mar	65.19%	97.0 kWh	Medium
 
-##Month	Repayment Rate	Avg Daily Usage	Risk Tier
-##Jan	31.11%	56.2 kWh	High
-##Feb	52.35%	83.0 kWh	Medium
-##Mar	65.19%	97.0 kWh	Medium
+### Note: March’s high usage pushes it toward High, but repayment is improving.
 
-###Note: March’s high usage pushes it toward High, but repayment is improving.
+## Page 3: Arrears Deep Dive
 
-##Page 3: Arrears Deep Dive
+** Arrears Distribution by Month (Pie Chart)Contribution Percentages:
 
-###Arrears Distribution by Month (Pie Chart)
+** Jan: 16.1% (5,000 / 31,000)
 
-###Contribution Percentages:
+** Feb: 48.4% (15,000 / 31,000)
 
-###Jan: 16.1% (5,000 / 31,000)
+** Mar: 35.5% (11,000 / 31,000)
 
-###Feb: 48.4% (15,000 / 31,000)
+** Top 10 Customers with Highest Arrears
 
-###Mar: 35.5% (11,000 / 31,000)
+** Highlights high-risk individuals for follow-up
 
-###Top 10 Customers with Highest Arrears
+** Page 4: High-Risk Customers
 
-###Highlights high-risk individuals for follow-up
+**  List of customers flagged as high-risk (based on risk tiers)
 
-###Page 4: High-Risk Customers
+** Their individual arrears, repayment rate, and usage
 
-###List of customers flagged as high-risk (based on risk tiers)
+** Drill-through to customer details
 
-###Their individual arrears, repayment rate, and usage
+## ⚠️ Risk Segmentation
 
-###Drill-through to customer details
+-- Cohorts (months) are classified into Low, Medium, or High risk using two dimensions:
 
-##⚠️ Risk Segmentation
+-- Repayment Rate (lower is riskier)
 
-##Cohorts (months) are classified into Low, Medium, or High risk using two dimensions:
+-- Average Daily Usage (higher may indicate potential overuse or inability to pay)
 
-##Repayment Rate (lower is riskier)
+-- Threshold Justification:
 
-##Average Daily Usage (higher may indicate potential overuse or inability to pay)
+-- Low Risk: Repayment ≥ 80% AND daily usage < 50 kWh
+-- Customers paying well and consuming modestly
 
-##Threshold Justification:
+--- Medium Risk: Repayment between 50–80% OR daily usage between 50–100 kWh
 
-###Low Risk: Repayment ≥ 80% AND daily usage < 50 kWh
+-- Moderate performance; needs monitoring
 
-###Customers paying well and consuming modestly
+## High Risk: Repayment < 50% OR daily usage > 100 kWh
 
-###Medium Risk: Repayment between 50–80% OR daily usage between 50–100 kWh
+**  Poor payment or excessive consumption, likely to default
 
-###Moderate performance; needs monitoring
+** 📉 Arrears Analysis
 
-###High Risk: Repayment < 50% OR daily usage > 100 kWh
+** Total Portfolio Arrears: 31,000 KES
 
-###Poor payment or excessive consumption, likely to default
+** February: Largest share, 48.4%, driven by a few large defaults
 
-##📉 Arrears Analysis
+** January: Smallest arrears but lowest repayment rate, possible write-offs or recent defaults
+** Arrears by Month
 
-##Total Portfolio Arrears: 31,000 KES
+** Jan: 5,000 KES (16.1%)
 
-###February: Largest share, 48.4%, driven by a few large defaults
+** Feb: 15,000 KES (48.4%)
 
-###January: Smallest arrears but lowest repayment rate, possible write-offs or recent defaults
+** Mar: 11,000 KES (35.5%)
 
-###Arrears by Month
+** 🔍 Additional Insights
 
-##Jan: 5,000 KES (16.1%)
+** Seasonality: Repayment rates improved from Jan → Mar, possibly due to better collection efforts or economic factors
 
-##Feb: 15,000 KES (48.4%)
+** Usage Spike in March: Average daily usage rose to 97 kWh, potentially stressing repayment capacity
 
-##Mar: 11,000 KES (35.5%)
+** High-Risk Customers: e.g., Alifred Joseph, Brian Njoroge have arrears > 2,000 KES and repayment rates < 30%. Immediate follow-up recommended
 
-###🔍 Additional Insights
+## 💡 Data-Driven Recommendations
 
-###Seasonality: Repayment rates improved from Jan → Mar, possibly due to better collection efforts or economic factors
+--  Target February Cohort for Intensive Collection
+-- Feb has highest arrears (15,000 KES) and medium risk
 
-###Usage Spike in March: Average daily usage rose to 97 kWh, potentially stressing repayment capacity
+-- Deploy field agents with customized payment plans
 
-###High-Risk Customers: e.g., Alifred Joseph, Brian Njoroge have arrears > 2,000 KES and repayment rates < 30%. Immediate follow-up recommended
+-- Introduce Usage Alerts for Customers Exceeding 80 kWh/day
 
-##💡 Data-Driven Recommendations
+-- High usage correlates with higher default risk
 
-###Target February Cohort for Intensive Collection
+-- Send SMS alerts with energy-saving tips or flexible payment options
+-- Reward Consistent Payers in March Cohort
 
-###Feb has highest arrears (15,000 KES) and medium risk
+-- March achieved highest repayment rate (65%) despite high usage
 
-###Deploy field agents with customized payment plans
+-- Consider loyalty discounts or priority maintenance
 
-###Introduce Usage Alerts for Customers Exceeding 80 kWh/day
+## Quantitative Basis:
 
-###High usage correlates with higher default risk
+** Feb arrears = 15,000 KES; repayment rate = 52% → room for improvement
 
-###Send SMS alerts with energy-saving tips or flexible payment options
+** Average daily usage in high-risk months > 80 kWh
 
-###Reward Consistent Payers in March Cohort
-
-###March achieved highest repayment rate (65%) despite high usage
-
-###Consider loyalty discounts or priority maintenance
-
-###Quantitative Basis:
-
-###Feb arrears = 15,000 KES; repayment rate = 52% → room for improvement
-
-###Average daily usage in high-risk months > 80 kWh
-
-###March repayment rate improved by 34 percentage points from January
+** March repayment rate improved by 34 percentage points from January
