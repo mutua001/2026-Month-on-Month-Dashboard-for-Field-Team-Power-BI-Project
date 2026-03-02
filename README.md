@@ -1,8 +1,8 @@
 # 2026-Month-on-Month-Dashboard-for-Field-Team-Power-BI-Project
 
-##📌 Overview
+* 📌 Overview
 
-###This project presents a Power BI dashboard designed for the field team to monitor key performance indicators (KPIs) on a monthly basis. The dashboard focuses on:
+## This project presents a Power BI dashboard designed for the field team to monitor key performance indicators (KPIs) on a monthly basis. The dashboard focuses on:
 
 ###Repayment rates and average daily electricity usage per customer cohort (month)
 
