@@ -16,51 +16,49 @@
 
 📁 Repository Structure
 text
-├── data/                     # Raw and processed data (CSV, Excel)
-├── dashboard/                # Power BI .pbix file
-├── images/                   # Screenshots of dashboard
-├── README.md                 # Project documentation (this file)
-├── requirements.txt          # Dependencies (if any)
-└── methodology.md            # Detailed steps of analysis
+├── data/                     - Raw and processed data (CSV, Excel)
+├── dashboard/                - Power BI .pbix file
+├── images/                   - Screenshots of dashboard
+├── README.md                 - Project documentation (this file)
+├── requirements.txt          - Dependencies (if any)
+└── methodology.md            - Detailed steps of analysis
 📊 Data Sources
 
-##The data is simulated based on field operations and includes:
+* The data is simulated based on field operations and includes:
 
-##Customer transactions: Payments, arrears, usage (kWh), active days
+* Time period: January – March 2026
 
-##Time period: January – March 2026
+* Fields: Customer Name, Month, Amount Paid (KES), Total kWh Used, Rate of Payment (%), Arrears (KES), Active Days
 
-###Fields: Customer Name, Month, Amount Paid (KES), Total kWh Used, Rate of Payment (%), Arrears (KES), Active Days
+* Note: All data is anonymized and used for demonstration purposes only.
 
-###Note: All data is anonymized and used for demonstration purposes only.
+## 🧮 Key Metrics Calculated
 
-###🧮 Key Metrics Calculated
+-- Repayment Rate (%)
 
-##Repayment Rate (%)
+-- Defined as:
 
-###Defined as:
+-- Repayment Rate = (Amount Paid / Expected Billing) * 100
 
-###Repayment Rate = (Amount Paid / Expected Billing) * 100
+-- Calculated per customer, then averaged per cohort (month)
 
-###Calculated per customer, then averaged per cohort (month)
+-- Average Daily kWh Usage
 
-###Average Daily kWh Usage
+-- Average Daily Usage = Total kWh Used / Active Days
 
-###Average Daily Usage = Total kWh Used / Active Days
+-- Active days = number of days with recorded usage
 
-###Active days = number of days with recorded usage
+-- Overall Portfolio Repayment Rate
 
-###Overall Portfolio Repayment Rate
+-- Weighted average of all monthly repayment rates
 
-###Weighted average of all monthly repayment rates
+-- Overall Average Daily Usage
 
-###Overall Average Daily Usage
+--- Average of daily usage across all customers
 
-###Average of daily usage across all customers
+--Arrears Contribution (%)
 
-#Arrears Contribution (%)
-
-###Arrears Contribution = (Sum of Arrears in Month / Total Portfolio Arrears) * 100
+-- Arrears Contribution = (Sum of Arrears in Month / Total Portfolio Arrears) * 100
 📈 Dashboard Design
 
 ##The dashboard consists of the following pages:
