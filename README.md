@@ -2,17 +2,17 @@
 
 * 📌 Overview
 
-## This project presents a Power BI dashboard designed for the field team to monitor key performance indicators (KPIs) on a monthly basis. The dashboard focuses on:
+- This project presents a Power BI dashboard designed for the field team to monitor key performance indicators (KPIs) on a monthly basis. The dashboard focuses on:
 
-###Repayment rates and average daily electricity usage per customer cohort (month)
+- Repayment rates and average daily electricity usage per customer cohort (month)
 
-###Risk segmentation of cohorts based on repayment behavior and usage patterns
+- Risk segmentation of cohorts based on repayment behavior and usage patterns
 
-###Arrears distribution and contribution analysis
+ - Arrears distribution and contribution analysis
 
-##Identification of high-risk customers for targeted follow-up
+- Identification of high-risk customers for targeted follow-up
 
-##The analysis covers the first quarter of 2026 (January – March) and provides actionable insights to improve collections and customer engagement.
+## The analysis covers the first quarter of 2026 (January – March) and provides actionable insights to improve collections and customer engagement.
 
 📁 Repository Structure
 text
